@@ -9,8 +9,7 @@ import sys
 # this swapping can be done max of 2 times
 # Find minimum number of bribes to make a standard sequence come into current chaotic state
 # The array has consecutive integers as elements starting from 1
-# function calculates minimum number of swaps to sort sequence if maximum swaps is restricted to 2 (forward directional swaps-bigger number comes to the left )
-# If the sequence cannot be sorrted with the above constrainet, chaotic sequence is reported
+# If the sequence cannot be sorrted with the above constraint, chaotic sequence is reported
 def minimumBribes(q):  
     len_A=len(q)
     number_swaps=0
