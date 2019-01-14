@@ -11,36 +11,28 @@ import sys
 # The input array q is of consecutive integers only
 # Swapping is NOT successive, any 2 elements maybe swapped
 
-def minimumBribes(q):  
-    len_A=len(q)
-    number_swaps=0
-    check_each=[0]*(len_A)
-    d=''
-    sorted_q=sorted(q)
-    for i in range(0,len_A):
-        if q==sorted_q:
-            break  
-        if d=='Too chaotic':
-            print (d)
-            break
-        else:
-            for j in range(0,len_A-1-i):
-                if q[j]>q[j+1]:
-                    temp_1=q[j]
-                    temp_2=q[j+1]
-                    q[j]=temp_2
-                    q[j+1]=temp_1
-                    check_each[temp_1-1]=check_each[temp_1-1]+1
-                    if check_each[temp_1-1]>2:
-                        d= 'Too chaotic'
-                        break                 
-                    else:
-                        number_swaps=number_swaps+1
-    if d!='Too chaotic':
-        print (number_swaps)
-
+def minimumSwaps(arr):
+    arr_sorted=sorted(arr)
+    len_arr=len(arr)
+    min_swaps=0
+    hash_table={}
+    for i,v in enumerate(arr):
+            hash_table[v]=i
+    for i in range(len_arr):
+        if arr==arr_sorted:
+            break          
+        if arr[i]!=arr_sorted[i]:
+            start_from_low_end=arr_sorted[i]
+            temp=arr[i]
+            index=hash_table[start_from_low_end]
+            arr[i]=start_from_low_end
+            arr[index]=temp
+            hash_table[arr_sorted[i]]=i
+            hash_table[temp]=index
+            min_swaps=min_swaps+1
+    return min_swaps
 
 B=[2,3,4,1,5];
-# This can be done in 3 swaps with the above constraint
+# This can be done in a minimum of 3 swaps with the above constraint
 # [2,3,4,1,5]-> [2,3,1,4,5] (swap 1)-> [2,1,3,4,5] (swap 2) -> [1,2,3,4,5] (swap 3)
-print (minimumBribes(B))
+print (minimumSwaps(B))
