@@ -1,6 +1,6 @@
 
-% Simple Bubble sort implementation
-% Pushes biggest element to the extreme right side by swapping adjacent elements
+# Simple Bubble sort implementation
+# Pushes biggest element to the extreme right side by swapping adjacent elements
 
 def bubble(A):
     len_A=len(A)
