@@ -42,5 +42,5 @@ def minimumBribes(q):
 
 B=[2,3,4,1,5];
 # This can be done in 3 swaps with the above constraint
-# [2,3,4,1,5]-> [2,3,1,4,5] -> [3,2,1,4,5] -> [1,2,3,4,5]
+# [2,3,4,1,5]-> [2,3,1,4,5] (swap 1)-> [2,1,3,4,5] (swap 2) -> [1,2,3,4,5] (swap 3)
 print (minimumBribes(B))
