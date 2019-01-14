@@ -4,9 +4,13 @@ import random
 import re
 import sys
 
-# Complete the minimumBribes function below.
-# function calculates minimum number of swaps to sort sequence if maximum swaps is restricted to 2 (forward directional swaps-bigger number comes to the left )
-# If the sequence cannot be sorrted with the above constrainet, chaotic sequence is reported
+# Complete the minimum swaps function below.
+# function calculates minimum number of swaps to sort sequence if maximum swaps is restricted to 2 
+# If the sequence cannot be sorted with the above constraint, chaotic sequence is reported
+
+# The input array q is of consecutive integers only
+# Swapping is NOT successive, any 2 elements maybe swapped
+
 def minimumBribes(q):  
     len_A=len(q)
     number_swaps=0
@@ -34,4 +38,9 @@ def minimumBribes(q):
                         number_swaps=number_swaps+1
     if d!='Too chaotic':
         print (number_swaps)
-    
+
+
+B=[2,3,4,1,5];
+# This can be done in 3 swaps with the above constraint
+# [2,3,4,1,5]-> [2,3,1,4,5] -> [3,2,1,4,5] -> [1,2,3,4,5]
+print (minimumBribes(B))
