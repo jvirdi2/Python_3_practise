@@ -5,11 +5,8 @@ import re
 import sys
 
 # Complete the minimum swaps function below.
-# function calculates minimum number of swaps to sort sequence if maximum swaps is restricted to 2 
-# If the sequence cannot be sorted with the above constraint, chaotic sequence is reported
-
 # The input array q is of consecutive integers only
-# Swapping is NOT successive, any 2 elements maybe swapped
+# Swapping is NOT successive, any 2 elements maybe swapped. Find minimum swaps to sort sequence
 
 def minimumSwaps(arr):
     arr_sorted=sorted(arr)
