@@ -1,4 +1,5 @@
 # Helps in getting different types of representation of a number as hexadecimal etc.
+# The output is as "decimal octet  hexadecimal binary"
 def print_formatted(number):
     # your code goes here
     width = len(str(bin(number)))-2
@@ -10,5 +11,5 @@ def print_formatted(number):
 
 
 if __name__ == '__main__':
-    n = 2
+    n = 5
     print_formatted(n)
