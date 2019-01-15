@@ -1,5 +1,5 @@
-# Helps in getting number of instances of an element of a list if repitition is there
-# Used dictionary to do this
+# The function below just calculates scoring of a game between Kevin and Stuart where
+# Kevin makes all words starting with vowels AEIOU and Stuart makes all words starting with consonants
 def minion_game(in_string):
     # your code goes here
     diction=all_strings(in_string)
@@ -18,7 +18,9 @@ def minion_game(in_string):
     else:
         print ('Draw')
 
-    
+# generates all possible substrings of a big string
+# Also records occurences of sub strings
+# Eg if input is given as "banana" then output is given as {'a':3 ,'b':1, 'n':2, 'ba' :1...........}
 def all_strings(string):
     string_diction={}
     len_string=len(string)
@@ -30,3 +32,8 @@ def all_strings(string):
             except:
                 string_diction[con_string]=1
     return string_diction
+
+# Sample case
+string='banana'
+print (all_strings(string))
+print (minion_game(string))
