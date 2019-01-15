@@ -3,6 +3,7 @@
 # queries are given as list of lists
 # Sample input is like
 # 5 3
+# Here 5 is size of list, [0 0 0 0 0]. 3 is number of operations. The operations are specified as below
 # 1 2 100
 # 2 5 100
 # 3 4 100
