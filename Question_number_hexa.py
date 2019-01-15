@@ -1,4 +1,4 @@
-# Helps in getting different types of representation of a number as hexadecimal etc.
+# Helps in getting different types of representation of a decimal number.
 # The output is as "decimal octet  hexadecimal binary"
 def print_formatted(number):
     # your code goes here
