@@ -1,5 +1,14 @@
 # Hard algorithm
 # Helps in finding maximum element in an array(list) of size n after queries have been performed
+# queries are given as list of lists
+# Sample input is like
+# 5 3
+# 1 2 100
+# 2 5 100
+# 3 4 100
+# After the first update list will be 100 100 0 0 0.
+# After the second update list will be 100 200 100 100 100
+# After the third update list will be 100 200 200 200 100.
 
 
 def arrayManipulation(n, queries):
@@ -16,10 +25,13 @@ def arrayManipulation(n, queries):
             maximum_v=x
     return maximum_v
 
-# n=5
-# 1 2 100
-# 2 5 100
-# 3 4 100
-# After the first update list will be 100 100 0 0 0.
-# After the second update list will be 100 200 100 100 100
-# After the third update list will be 100 200 200 200 100.
+
+if __name__ == '__main__':
+    nm = input().split()
+    n = int(nm[0])
+    m = int(nm[1])
+    queries = []
+    for _ in range(m):
+        queries.append(list(map(int, input().rstrip().split())))
+    result = arrayManipulation(n, queries)
+    print (result)
