@@ -10,6 +10,7 @@
 # After the first update list will be 100 100 0 0 0.
 # After the second update list will be 100 200 100 100 100
 # After the third update list will be 100 200 200 200 100.
+# https://www.hackerrank.com/challenges/crush/problem
 
 
 def arrayManipulation(n, queries):
