@@ -1,5 +1,6 @@
 # The function below just calculates scoring of a game between Kevin and Stuart where
 # Kevin makes all words starting with vowels AEIOU and Stuart makes all words starting with consonants
+# https://www.hackerrank.com/challenges/the-minion-game/problem
 def minion_game(in_string):
     # your code goes here
     diction=all_strings(in_string)
