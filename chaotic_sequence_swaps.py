@@ -10,6 +10,7 @@ import sys
 # Find minimum number of bribes to make a standard sequence come into current chaotic state
 # The array has consecutive integers as elements starting from 1
 # If the sequence cannot be sorrted with the above constraint, chaotic sequence is reported
+# https://www.hackerrank.com/challenges/new-year-chaos/problem
 def minimumBribes(q):  
     len_A=len(q)
     number_swaps=0
