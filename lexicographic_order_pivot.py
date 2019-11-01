@@ -7,6 +7,7 @@ import sys
 # Complete the biggerIsGreater function below.
 # Lexicographic order creates the next biggest string given an input alphabetical string
 #  Given string as "abdc". The next biggest will be "acbd"
+# https://www.hackerrank.com/challenges/bigger-is-greater/problem
 def biggerIsGreater(w):
     lenw=len(w)
     count=0
