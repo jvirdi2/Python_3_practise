@@ -7,6 +7,7 @@ import sys
 # Complete the minimum swaps function below.
 # The input array q is of consecutive integers only
 # Swapping is NOT successive, any 2 elements maybe swapped. Find minimum swaps to sort sequence
+# https://www.hackerrank.com/challenges/minimum-swaps-2/problem
 
 def minimumSwaps(arr):
     arr_sorted=sorted(arr)
