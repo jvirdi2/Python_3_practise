@@ -24,26 +24,32 @@ def widest_gap(n,start,finish):
         except:
             continue
 
+    
+# Below code, Helps in finding sub arrays within the main array, having successive elments. 
+    lane_list.append(-1)
     len_lane_list=len(lane_list)
     
     gap=1
     list_of_gaps=[]
     
-# Below code, Helps in finding sub arrays within the main array, having successive elments. 
     if len_lane_list==0:
-        return 0
+            return 0
     else:
         for i in range(0,len_lane_list-1):
             if lane_list[i+1]==(1+lane_list[i]):
                 gap=gap+1
-                
+                    
                 if (i+1)==(len_lane_list-1):
-                    list_of_gaps.append(gap)
+                        list_of_gaps.append(gap)
             else:
                 list_of_gaps.append(gap)
                 gap=1
-                
+    print(list_of_gaps)              
     return max(list_of_gaps)
+
+a=[3,4,7]
+longest_array(a)
+
                     
         
   
