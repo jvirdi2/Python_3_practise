@@ -47,14 +47,7 @@ def widest_gap(n,start,finish):
     print(list_of_gaps)              
     return max(list_of_gaps)
 
-a=[3,4,7]
-longest_array(a)
-
-                    
         
-  
-    
-
 n=10
 #start=[8,2,5,1]
 #finish=[10,2,6,2]
