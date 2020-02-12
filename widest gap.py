@@ -30,7 +30,7 @@ def widest_gap(n,start,finish):
     if len_lane_list==0:
             return 0
     else:
-        lane_list.append(-1)
+        lane_list.append(-1) # added -1 as the end element so that computation is done correctly. Otherwise, last element has an issue
         gap=1
         list_of_gaps=[]
         for i in range(0,len_lane_list):
